@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Multi Selector</title>
+        <style>
+            * {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+                    "Helvetica Neue", sans-serif;
+            }
+            body {
+                background-color: blueviolet;
+            }
+            input {
+                outline: none;
+                border: none;
+            }
+            .multi-selector {
+                width: max-content;
+            }
+            .select-field {
+                border: 1px solid rgb(187, 187, 187);
+            }
+            .select-field,
+            .task,
+            .list {
+                width: 100%;
+                background-color: white;
+                padding: 0.3rem;
+            }
+            .list {
+                box-shadow: 0 30px 60px rgb(0, 0, 0, 0.2);
+                display: none;
+            }
+            .down-arrow {
+                font-size: 1.2rem;
+                display: inline-block;
+                cursor: pointer;
+                transition: 0.2s linear;
+            }
+            .task {
+                display: block;
+                padding-left: 0;
+            }
+            .task span {
+                float: right;
+                font-size: 0.6rem;
+                padding-top: 6px;
+            }
+            .task:hover {
+                background-color: aliceblue;
+            }
+            .show {
+                display: block;
+            }
+            .rotate180 {
+                transform: rotate(-60deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="multi-selector">
+            <div class="select-field">
+                <input
+                    type="text"
+                    name=""
+                    placeholder="Choose tasks"
+                    id=""
+                    class="input-selector"
+                />
+                <span class="down-arrow">&blacktriangledown;</span>
+            </div>
+            <!---------List of checkboxes and options----------->
+            <div class="list">
+                <label for="task1" class="task">
+                    <input type="checkbox" name="" id="task1" />
+                    Task 1
+                    <span>10 mins</span>
+                </label>
+            </div>
+        </div>
+
+        <script>
+            document
+                .querySelector(".select-field")
+                .addEventListener("click", () => {
+                    document.querySelector(".list").classList.toggle("show");
+                    document
+                        .querySelector(".down-arrow")
+                        .classList.toggle("rotate180");
+                });
+        </script>
+    </body>
+</html>
