@@ -8,18 +8,18 @@
         
         <div class="list-admin">
             <div class="admin-top">
-                <img class="admin-img" src="{{URL('images/hieu.png')}}" alt="">
+                <img class="admin-img" src="{{URL('images/Nguyen.png')}}" alt="">
             </div>
             <div class="admin-name">
-                Hieu
+                Nguyen
             </div>
         </div>
         <div class="list-admin">
             <div class="admin-top">
-                <img class="admin-img" src="{{URL('images/nam.jpg')}}" alt="">
+                <img class="admin-img" src="{{URL('images/Vinh.png')}}" alt="">
             </div>
             <div class="admin-name">
-                Nam
+                Vinh
             </div>
         </div>
         <div class="list-admin">
@@ -27,7 +27,7 @@
                 <img class="admin-img" src="{{URL('images/hung.png')}}" alt="">
             </div>
             <div class="admin-name">
-                Hung
+                Phong
             </div>
         </div>
     </div>

@@ -67,7 +67,7 @@
             </div>
             </div>
             <div class="img-login">
-                <img class="image-l" srcset="{{URL('images/login-img.png')}} 2x " alt="">
+                <img class="image-l" srcset="{{URL('images/Login.jpg')}} 2x " alt="">
             </div>
         </div>
     </div>
