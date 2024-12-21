@@ -17,7 +17,6 @@
             </td class="content-table">
             <td class="content-table">
               <div class="VED">
-
                 <a href="{{url("/major/".$major->id."/edit")}}"  class="VED2">Edit</a>
                 <form action="{{url("/major/".$major->id)}}" method="post">
                   {{ method_field('DELETE') }}
@@ -32,5 +31,6 @@
         <tfoot>
         </tfoot>
     </table>
+    
   </div>
 @endsection
