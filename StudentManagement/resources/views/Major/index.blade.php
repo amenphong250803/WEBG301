@@ -10,25 +10,25 @@
             </tr>
             </thead>
             <tbody class="table-group-divider">
-                  @foreach ($majors as $major)
-                  <tr class="tr-content" >
-                    <td class="content-table">
-                      {{$major->name}}
-                    </td class="content-table">
-                    <td class="content-table">
-                      <div class="VED">
+              @foreach ($majors as $major)
+              <tr class="tr-content" >
+                <td class="content-table">
+                  {{$major->name}}
+                </td class="content-table">
+                <td class="content-table">
+                  <div class="VED">
 
-                        <a href="{{url("/major/".$major->id."/edit")}}"  class="VED2">Edit</a>
-                        <form action="{{url("/major/".$major->id)}}" method="post">
-                          {{ method_field('DELETE') }}
-                          @csrf
-                          <button type="submit" class="VED3" onclick="return confirm('Are you sure?');">Delete</button>
-                        </form>
-                      </div>
-                    </td>
-                  </tr>
-                  @endforeach
-            </tbody>
+                    <a href="{{url("/major/".$major->id."/edit")}}"  class="VED2">Edit</a>
+                    <form action="{{url("/major/".$major->id)}}" method="post">
+                      {{ method_field('DELETE') }}
+                      @csrf
+                      <button type="submit" class="VED3" onclick="return confirm('Are you sure?');">Delete</button>
+                    </form>
+                  </div>
+                </td>
+              </tr>
+              @endforeach
+        </tbody>
             <tfoot>
             </tfoot>
     </table>

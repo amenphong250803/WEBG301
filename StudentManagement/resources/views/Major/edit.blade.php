@@ -1,6 +1,7 @@
 @extends('layout.layout')
 @section('title','Edit Major')
 @section('content')
+
 <form action="/major/{{$major->id}}" method="post">
     {{ method_field('PUT') }}
     @csrf
