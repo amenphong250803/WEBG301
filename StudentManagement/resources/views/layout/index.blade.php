@@ -24,7 +24,7 @@
         </div>
         <div class="list-admin">
             <div class="admin-top">
-                <img class="admin-img" src="{{URL('images/hung.png')}}" alt="">
+                <img class="admin-img" src="{{URL('images/Phong.png')}}" alt="">
             </div>
             <div class="admin-name">
                 Phong
