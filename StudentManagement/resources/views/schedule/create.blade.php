@@ -28,7 +28,7 @@
     <div class="mb-3">
         <label for="classes" class="form-label">Class</label>
         <select id="classes" name="classes[]" class="form-select" aria-label="Select Class">
-            <option selected>Please choose one</option>
+            <option selected>Please choose one option</option>
             @foreach($classes as $class)
             <option value="{{$class->id}}">{{$class->name}}</option>
             @endforeach
@@ -37,7 +37,7 @@
     <div class="mb-3">
         <label for="course_id" class="form-label">Course</label>
         <select id="course_id" name="course_id" class="form-select" aria-label="Select Course">
-            <option selected>Please choose one</option>
+            <option selected>Please choose one option</option>
             @foreach($courses as $course)
             <option value="{{$course->id}}">{{$course->name}}</option>
             @endforeach

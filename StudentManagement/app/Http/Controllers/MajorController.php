@@ -26,7 +26,7 @@ class MajorController extends Controller
     public function create()
     {
         //
-        if(!Auth::check()){
+        if (!Auth::check()) {
             return redirect('/login');
         }
         return view('major.create');
@@ -55,11 +55,13 @@ class MajorController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
+
+
     public function edit(string $id)
     {
         //
         $major = Major::find($id);
-        if(!Auth::check()){
+        if (!Auth::check()) {
             return redirect('/login');
         }
         return view("major.edit", [
@@ -86,7 +88,7 @@ class MajorController extends Controller
     {
         //
         $major = Major::find($id);
-        if(!Auth::check()){
+        if (!Auth::check()) {
             return redirect("/login");
         }
         $major->delete();

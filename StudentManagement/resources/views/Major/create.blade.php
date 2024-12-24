@@ -1,6 +1,7 @@
 @extends('layout.layout')
 @section('title','Create Major')
 @section('content')
+
 <form action="/major" method="post">
     @csrf
     <div class="mb-3">
