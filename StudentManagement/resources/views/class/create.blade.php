@@ -3,7 +3,7 @@
 @section('content')
     <form action="/class" method="post">
         @csrf
-        <div class="mb-3">
+        <div class="mb-3" style="margin: 10px 0">
             <label for="name" class="form-label">Class Name</label>
             <input type="text" class="form-control" id="name" name="name" placeholder="Class name">
         </div>
